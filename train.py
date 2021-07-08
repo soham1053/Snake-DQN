@@ -9,7 +9,10 @@ import time
 if __name__ == '__main__':
     env = gym.make(env_name)
     env.gridSize = grid_size
-    agent = Agent(input_dims=env.observation_space.shape, n_actions=env.action_space.n)
+    try:
+        agent = Agent(input_dims=env.observation_space.shape, n_actions=env.action_space.n, model_path=model_path)
+    except:
+        agent = Agent(input_dims=env.observation_space.shape, n_actions=env.action_space.n)
     scores, eps_history = [], []
 
     env.render()
