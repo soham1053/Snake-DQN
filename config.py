@@ -1,0 +1,10 @@
+env_name = 'snake-v0'
+model_path = 'snake9x9.pt'
+n_games = 10000
+gamma=0.99
+epsilon=0.2
+lr=0.0001
+batch_size=96
+max_mem_size=10000
+eps_end=0.0001
+eps_dec=5e-5
