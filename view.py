@@ -7,6 +7,7 @@ from config import *
 
 if __name__ == '__main__':
     env = gym.make(env_name)
+    env.gridSize = grid_size
     agent = Agent(input_dims=env.observation_space.shape, n_actions=env.action_space.n, model_path=model_path, 
                     epsilon=0, eps_end=0)
     scores = []

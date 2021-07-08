@@ -1,4 +1,5 @@
 env_name = 'snake-v0'
+grid_size = (9, 9)
 model_path = 'snake9x9.pt'
 n_games = 10000
 gamma=0.99

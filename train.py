@@ -8,8 +8,12 @@ import time
 
 if __name__ == '__main__':
     env = gym.make(env_name)
-    agent = Agent(input_dims=env.observation_space.shape, n_actions=env.action_space.n, model_path=model_path)
+    env.gridSize = grid_size
+    agent = Agent(input_dims=env.observation_space.shape, n_actions=env.action_space.n)
     scores, eps_history = [], []
+
+    env.render()
+    env.fps = 0
 
     chooseActionTime, stepTime, storeTransitionTime, learnTime = 0, 0, 0, 0
     totalTime = time.time()
@@ -18,7 +22,6 @@ if __name__ == '__main__':
         done = False
         observation = env.reset()
         env.render()
-        env.fps = 0
         while not done:
             s = time.time()
             action = agent.choose_action(observation)
