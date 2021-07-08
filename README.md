@@ -1,9 +1,9 @@
 # Snake-DQN
 ---
 
-Created a gym environment of the Snake game and implemented a [Deep Q Network] (https://storage.googleapis.com/deepmind-data/assets/papers/DeepMindNature14236Paper.pdf) to play in it.
+Created a gym environment of the Snake game and implemented a [Deep Q Network](https://storage.googleapis.com/deepmind-data/assets/papers/DeepMindNature14236Paper.pdf) to play in it.
 
-To view the agent in Snake 9x9 grid, run [`view.py`])(view.py)
+To view the agent in Snake 9x9 grid, run [`view.py`](view.py)
 
 
 
